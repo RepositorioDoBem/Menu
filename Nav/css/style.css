@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins";
+}
+body{
+    height: 100vh;
+}
+
+nav{
+    background-color: #FFD100;
+    height: 35px;
+    padding: 10px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+/*Menu fechado*/
+#menu-list{
+    display: none;
+}
+
+/*Menu aberto*/
+#menu-list.expandir{
+    width: 200px;
+    list-style: none;
+    left: 0;
+    display: block;
+    position: fixed;
+}
+
+/*item da lista do menu*/
+.item{
+    height: 40px;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.item>a{
+    text-decoration: none;
+    color: black;
+    padding: 0 10px 0 10px;
+    display: flex;
+}
+
+.circle{
+    width: 30px;
+    height: 25px;
+    background-color: #FFD100;
+    border-radius: 50px;
+    border: 2px solid #fff;
+    margin: 12px 15px 0 0; 
+}
+
+.txt{
+    border-radius: 50px;
+    border: 1px solid #BFBFBF;
+    padding: 5px;
+    width: 160px;
+    height: 25px;
+    text-align: center;
+    margin-top: 10px;
+    box-shadow: 0 2px 0 0 #BFBFBF;
+    background-color: #fff;
+}
+
+.txt:hover{
+    transition: 0.35s;
+    transform: scale(0.9);
+}
+
+#user-icon{
+    position: fixed;
+    right: 0;
+    top: 0;
+    margin: 10px 20px 0 0;
+    cursor: pointer;
+}
+
+#menu-btn{
+    cursor: pointer;
+}
